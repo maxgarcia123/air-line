@@ -1,0 +1,41 @@
+.modal-background {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+}
+
+.modal-container{
+    width: 40%;
+    height: 75%;
+    background-color: #FFFFFF;
+    z-index: 20;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.modal-container h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+@media (max-width: 700px)  {
+    .modal-container {
+        width: 95%;
+        height: 80%;
+    }
+    .modal-container h2 {
+        font-size: 1rem;
+    }
+}
